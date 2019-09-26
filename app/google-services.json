@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "893075559609",
+    "firebase_url": "https://printon-bacd4.firebaseio.com",
+    "project_id": "printon-bacd4",
+    "storage_bucket": "printon-bacd4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893075559609:android:353183784081b47454b768",
+        "android_client_info": {
+          "package_name": "com.printon.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893075559609-b0mr08b35alcth218hhr0mnarmosjn67.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.printon.user",
+            "certificate_hash": "e4a2d5f7ab67337b2ba5541c6ec13b51f3440173"
+          }
+        },
+        {
+          "client_id": "893075559609-dhftimj1s44ldt9leccaik892mi1pmfo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3f7vB0rKrhu-PyI8tebDS1dEBch6_nuA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "893075559609-dhftimj1s44ldt9leccaik892mi1pmfo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
