@@ -1,4 +1,4 @@
-package com.printon.user;
+package com.printon.user.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,9 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
+import com.aurelhubert.ahbottomnavigation.AHBottomNavigationAdapter;
+import com.printon.user.R;
+
 //  Git test
 
 public class MainActivity extends AppCompatActivity {
+
+
 
 
     @Override
@@ -16,9 +22,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
+
     }
 
-    public void check(View view) {
-        Toast.makeText(this, "This is test", Toast.LENGTH_SHORT).show();
-    }
+
 }
