@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.PersonalDetailsFragment"
+    android:padding="15dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/address_type_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address Type"
+            android:layout_gravity="center_vertical"
+            android:textColor="#000"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Home"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Office"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_below="@+id/address_type_layout"
+        android:id="@+id/city_layout"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.7"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/city_field"
+            android:layout_marginRight="5dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="City"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.3"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/pin_code_field"
+            android:layout_marginLeft="5dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Pin Code"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/flat_field"
+        android:layout_below="@+id/city_layout">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Flat / House No. / Floor/ Building"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/street_field"
+        android:layout_below="@+id/flat_field">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Colony / Street / Locality"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/landmark_field"
+        android:layout_below="@+id/street_field">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Landmark E.g. Near XYZ flyover, etc."/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/landmark_field"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:text="Done"
+        android:id="@+id/done_button"/>
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.PersonalDetailsFragment"
+    android:padding="15dp">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/email_field"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Email ID"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_below="@+id/email_field"
+        android:id="@+id/name_layout">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/first_name_field"
+            android:layout_marginRight="5dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="First Name"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/last_name_field"
+            android:layout_marginLeft="5dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Last Name"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/first_number_layout"
+        android:layout_below="@+id/name_layout"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91"
+            android:textColor="#000"
+            android:layout_centerVertical="true"
+            android:textSize="17dp"
+            android:id="@+id/con_code_1"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/first_number_field"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/con_code_1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Mobile Number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/second_number_layout"
+        android:layout_below="@+id/first_number_layout"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91"
+            android:textColor="#000"
+            android:layout_centerVertical="true"
+            android:textSize="17dp"
+            android:id="@+id/con_code_2"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/second_number_field"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/con_code_2">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Mobile Number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/second_number_layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:text="Next"
+        android:id="@+id/next_button"/>
+
+</RelativeLayout>
