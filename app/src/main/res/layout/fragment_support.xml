@@ -6,6 +6,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.SupportFragment">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/final_main_background"
+        android:layout_marginTop="-10dp"
+        android:layout_marginLeft="-180dp"/>
+
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -38,7 +45,7 @@
                 android:orientation="horizontal"
                 android:id="@+id/contact_support_layout"
                 android:layout_below="@+id/support_title_card"
-                android:padding="10dp"
+                android:padding="12dp"
                 android:weightSum="2">
 
                 <androidx.cardview.widget.CardView
@@ -46,8 +53,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:layout_marginRight="10dp"
-                    android:background="#fff"
-                    app:cardElevation="10dp">
+                    android:background="#fff">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -101,7 +107,7 @@
                     android:layout_weight="1"
                     android:layout_marginLeft="10dp"
                     android:background="#fff"
-                    app:cardElevation="10dp">
+                    >
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -163,7 +169,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="#fff"
-                    app:cardElevation="10dp">
+                    >
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -172,11 +178,10 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Cancel Order"
+                            android:text="Track Order"
                             android:layout_centerVertical="true"
                             android:textColor="#000"
                             android:textSize="20dp"
-                            android:textStyle="bold"
                             android:layout_alignParentLeft="true"
                             android:layout_marginLeft="10dp"/>
 
@@ -187,7 +192,7 @@
                             android:layout_centerVertical="true"
                             android:layout_alignParentRight="true"
                             android:layout_marginRight="10dp"
-                            android:id="@+id/arrow1"/>
+                            android:id="@+id/arrow4"/>
 
                         <View
                             android:layout_width="1dp"
@@ -195,9 +200,10 @@
                             android:layout_marginTop="20dp"
                             android:layout_centerVertical="true"
                             android:background="#FF5722"
-                            android:layout_toLeftOf="@+id/arrow1"/>
+                            android:layout_toLeftOf="@+id/arrow4"/>
 
                     </RelativeLayout>
+
 
                 </androidx.cardview.widget.CardView>
 
@@ -205,7 +211,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="#fff"
-                    app:cardElevation="10dp"
                     android:layout_marginTop="15dp">
 
                     <RelativeLayout
@@ -219,7 +224,6 @@
                             android:layout_centerVertical="true"
                             android:textColor="#000"
                             android:textSize="20dp"
-                            android:textStyle="bold"
                             android:layout_alignParentLeft="true"
                             android:layout_marginLeft="10dp"/>
 
@@ -248,7 +252,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="#fff"
-                    app:cardElevation="10dp"
                     android:layout_marginTop="15dp">
 
                     <RelativeLayout
@@ -262,7 +265,6 @@
                             android:layout_centerVertical="true"
                             android:textColor="#000"
                             android:textSize="20dp"
-                            android:textStyle="bold"
                             android:layout_alignParentLeft="true"
                             android:layout_marginLeft="10dp"/>
 
@@ -291,7 +293,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="#fff"
-                    app:cardElevation="10dp"
                     android:layout_marginTop="15dp">
 
                     <RelativeLayout
@@ -301,11 +302,10 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Track Order"
+                            android:text="Cancel Order"
                             android:layout_centerVertical="true"
                             android:textColor="#000"
                             android:textSize="20dp"
-                            android:textStyle="bold"
                             android:layout_alignParentLeft="true"
                             android:layout_marginLeft="10dp"/>
 
@@ -316,7 +316,7 @@
                             android:layout_centerVertical="true"
                             android:layout_alignParentRight="true"
                             android:layout_marginRight="10dp"
-                            android:id="@+id/arrow4"/>
+                            android:id="@+id/arrow1"/>
 
                         <View
                             android:layout_width="1dp"
@@ -324,7 +324,7 @@
                             android:layout_marginTop="20dp"
                             android:layout_centerVertical="true"
                             android:background="#FF5722"
-                            android:layout_toLeftOf="@+id/arrow4"/>
+                            android:layout_toLeftOf="@+id/arrow1"/>
 
                     </RelativeLayout>
 
@@ -355,8 +355,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:background="#fff"
-                    app:cardElevation="10dp">
+                    android:background="#fff">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -369,7 +368,6 @@
                             android:layout_centerVertical="true"
                             android:textColor="#000"
                             android:textSize="20dp"
-                            android:textStyle="bold"
                             android:layout_alignParentLeft="true"
                             android:layout_marginLeft="10dp"/>
 
@@ -398,7 +396,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="#fff"
-                    app:cardElevation="10dp"
                     android:layout_marginTop="15dp">
 
                     <RelativeLayout
@@ -412,7 +409,6 @@
                             android:layout_centerVertical="true"
                             android:textColor="#000"
                             android:textSize="20dp"
-                            android:textStyle="bold"
                             android:layout_alignParentLeft="true"
                             android:layout_marginLeft="10dp"/>
 
@@ -441,7 +437,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="#fff"
-                    app:cardElevation="10dp"
                     android:layout_marginTop="15dp">
 
                     <RelativeLayout
@@ -455,7 +450,6 @@
                             android:layout_centerVertical="true"
                             android:textColor="#000"
                             android:textSize="20dp"
-                            android:textStyle="bold"
                             android:layout_alignParentLeft="true"
                             android:layout_marginLeft="10dp"/>
 
@@ -484,7 +478,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="#fff"
-                    app:cardElevation="10dp"
                     android:layout_marginTop="15dp">
 
                     <RelativeLayout
@@ -498,7 +491,6 @@
                             android:layout_centerVertical="true"
                             android:textColor="#000"
                             android:textSize="20dp"
-                            android:textStyle="bold"
                             android:layout_alignParentLeft="true"
                             android:layout_marginLeft="10dp"/>
 
