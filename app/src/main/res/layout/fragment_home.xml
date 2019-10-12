@@ -6,17 +6,21 @@
     >
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/final_main_background"
-        android:layout_marginTop="-10dp"
-        android:layout_marginLeft="-180dp"/>
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo_home"
+        android:layout_marginTop="5dp"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="10dp"
-        android:layout_margin="5dp">
+        android:layout_margin="5dp"
+        android:layout_below="@+id/logo_home"
+        >
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"

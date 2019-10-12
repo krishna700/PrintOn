@@ -3,16 +3,16 @@
     package="com.printon.user">
 
     <application
+        android:name=".Util.App"
         android:allowBackup="true"
         android:icon="@mipmap/launch"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/launch"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.AddDetailsActivity">
-
-        </activity>
-        <activity android:name=".Activities.MainActivity"></activity>
+        <activity android:name=".Activities.SubCategoriesActivity"></activity>
+        <activity android:name=".Activities.AddDetailsActivity"></activity>
+        <activity android:name=".Activities.MainActivity" />
         <activity
             android:name=".Activities.LoginActivity"
             android:noHistory="true" />
