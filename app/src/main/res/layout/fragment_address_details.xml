@@ -20,7 +20,8 @@
             android:layout_height="wrap_content"
             android:text="Address Type"
             android:layout_gravity="center_vertical"
-            android:textColor="#000"/>
+            android:textColor="@color/textblack"
+            android:fontFamily="@font/lato"/>
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -32,14 +33,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:text="Home"
-                />
+                android:fontFamily="@font/lato"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:text="Office"
-                />
+                android:fontFamily="@font/lato"/>
 
         </RadioGroup>
 
@@ -66,7 +67,9 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="City"/>
+                android:hint="City"
+                android:textColor="@color/textblack"
+                android:fontFamily="@font/lato"/>
 
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
@@ -80,7 +83,9 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Pin Code"/>
+                android:hint="Pin Code"
+                android:textColor="@color/textblack"
+                android:fontFamily="@font/lato"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -99,7 +104,9 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Flat / House No. / Floor/ Building"/>
+            android:hint="Flat / House No. / Floor/ Building"
+            android:textColor="@color/textblack"
+            android:fontFamily="@font/lato"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -113,7 +120,9 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Colony / Street / Locality"/>
+            android:hint="Colony / Street / Locality"
+            android:textColor="@color/textblack"
+            android:fontFamily="@font/lato"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -127,7 +136,9 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Landmark E.g. Near XYZ flyover, etc."/>
+            android:hint="Landmark E.g. Near XYZ flyover, etc."
+            android:textColor="@color/textblack"
+            android:fontFamily="@font/lato"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -138,6 +149,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginTop="10dp"
         android:text="Done"
-        android:id="@+id/done_button"/>
+        android:id="@+id/done_button"
+        android:fontFamily="@font/lato"/>
 
 </RelativeLayout>

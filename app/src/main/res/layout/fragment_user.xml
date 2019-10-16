@@ -19,7 +19,8 @@
             android:text="Your Account"
             android:textSize="20dp"
             android:layout_gravity="center"
-            android:textColor="#FF5722"/>
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/lato"/>
 
     </androidx.cardview.widget.CardView>
 
@@ -38,40 +39,45 @@
             android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/your_addresses_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Your Addresses"
-                android:textColor="#000"
-                android:textSize="17dp"
-                android:textStyle="bold"
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:id="@+id/your_addresses_text"/>
+                android:text="Your Addresses"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/textblack"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="View/Edit name, mobile"
-                android:textColor="#000"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/textblack"
                 android:textSize="15dp"
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="10dp"
                 android:id="@+id/view_your_addresses_text1"
                 android:layout_below="@+id/your_addresses_text"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="and address"
-                android:textColor="#000"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/textblack"
                 android:textSize="15dp"
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="10dp"
                 android:id="@+id/view_your_addresses_text2"
                 android:layout_below="@+id/view_your_addresses_text1"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="5dp" />
 
 
 
@@ -89,7 +95,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="60dp"
                 android:layout_centerVertical="true"
-                android:background="#FF5722"
+                android:background="@color/colorAccent"
                 android:layout_toLeftOf="@+id/arrow11"/>
 
         </RelativeLayout>
@@ -114,31 +120,35 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Your Orders"
-                android:textColor="#000"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/textblack"
                 android:textSize="17dp"
                 android:textStyle="bold"
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:id="@+id/your_orders_text"/>
+                android:id="@+id/your_orders_text"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="View, track, cancel or"
-                android:textColor="#000"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/textblack"
                 android:textSize="15dp"
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="10dp"
                 android:id="@+id/view_your_orders_text1"
                 android:layout_below="@+id/your_orders_text"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="return order"
-                android:textColor="#000"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/textblack"
                 android:textSize="15dp"
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="10dp"
@@ -162,7 +172,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="60dp"
                 android:layout_centerVertical="true"
-                android:background="#FF5722"
+                android:background="@color/colorAccent"
                 android:layout_toLeftOf="@+id/arrow12"/>
 
         </RelativeLayout>

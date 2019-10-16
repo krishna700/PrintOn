@@ -51,7 +51,7 @@ public class HomeFragment extends Fragment {
         categories.add(model);
         model=new CategoriesRecyclerModel(R.drawable.cushion,"Cushions");
         categories.add(model);
-        model=new CategoriesRecyclerModel(R.drawable.bookings,"Bookings");
+        model=new CategoriesRecyclerModel(R.drawable.bookings,"Events");
         categories.add(model);
         model=new CategoriesRecyclerModel(R.drawable.gifts,"Gifts");
         categories.add(model);

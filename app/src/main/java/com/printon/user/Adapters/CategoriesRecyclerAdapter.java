@@ -12,7 +12,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.printon.user.Activities.SubCategoriesActivity;
+import com.printon.user.Activities.KeyChainSubCategoriesActivity;
+import com.printon.user.Activities.MugsSubCategoriesActivity;
+import com.printon.user.Activities.PillowSubCategoriesActivity;
 import com.printon.user.Models.CategoriesRecyclerModel;
 import com.printon.user.R;
 import com.printon.user.Util.App;
@@ -42,6 +44,7 @@ public class CategoriesRecyclerAdapter extends RecyclerView.Adapter<CategoriesRe
     public void onBindViewHolder(@NonNull Holder holder, final int position) {
         CategoriesRecyclerModel model = categories.get(position);
         holder.categories_image.setImageResource(model.getCat_image());
+        holder.categories_text.setText(model.getCat_name());
 
     }
 
@@ -52,16 +55,54 @@ public class CategoriesRecyclerAdapter extends RecyclerView.Adapter<CategoriesRe
 
     public class Holder extends RecyclerView.ViewHolder {
         ImageView categories_image;
+        TextView categories_text;
 
         public Holder(@NonNull View itemView) {
             super(itemView);
             categories_image = itemView.findViewById(R.id.categories_image);
+            categories_text=itemView.findViewById(R.id.categories_text);
 
             categories_image.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     App.getSingleton().setCategory(categories.get(getAdapterPosition()).getCat_name());
-                    context.startActivity(new Intent(context, SubCategoriesActivity.class));
+                    switch (categories.get(getAdapterPosition()).getCat_name()){
+
+                        case "Photos":
+                            Toast.makeText(context, "1", Toast.LENGTH_SHORT).show();
+                            break;
+
+                        case "Mugs":
+                            context.startActivity(new Intent(context, MugsSubCategoriesActivity.class));
+                            Toast.makeText(context, "2", Toast.LENGTH_SHORT).show();
+                            break;
+
+                        case "Key Chains":
+                            context.startActivity(new Intent(context, KeyChainSubCategoriesActivity.class));
+                            Toast.makeText(context, "3", Toast.LENGTH_SHORT).show();
+                            break;
+
+                        case "T-shirts":
+                            Toast.makeText(context, "4", Toast.LENGTH_SHORT).show();
+                            break;
+
+                        case "Cushions":
+                            context.startActivity(new Intent(context, PillowSubCategoriesActivity.class));
+                            Toast.makeText(context, "5", Toast.LENGTH_SHORT).show();
+                            break;
+
+                        case "Events":
+                            Toast.makeText(context, "6", Toast.LENGTH_SHORT).show();
+                            break;
+
+
+                        case "Gifts":
+                            Toast.makeText(context, "7", Toast.LENGTH_SHORT).show();
+                            break;
+
+
+                    }
+
 
                 }
             });

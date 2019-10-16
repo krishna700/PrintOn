@@ -27,8 +27,9 @@
                     android:layout_height="wrap_content"
                     android:text="Support"
                     android:textSize="20dp"
+                    android:fontFamily="@font/lato"
                     android:layout_gravity="center"
-                    android:textColor="#FF5722"/>
+                    android:textColor="@color/colorAccent"/>
 
             </androidx.cardview.widget.CardView>
 
@@ -66,9 +67,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Call Us"
-                            android:textColor="#000"
                             android:layout_gravity="center_horizontal"
                             android:textSize="15dp"
+                            android:fontFamily="@font/lato"
+                            android:textColor="@color/textblack"
                             android:textStyle="bold"
                             android:layout_marginTop="5dp"/>
 
@@ -76,7 +78,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Mon to Fri"
-                            android:textColor="#000"
+                            android:fontFamily="@font/lato"
+                            android:textColor="@color/textblack"
                             android:layout_gravity="center_horizontal"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"/>
@@ -85,7 +88,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="8:00am to 5:00pm"
-                            android:textColor="#000"
+                            android:fontFamily="@font/lato"
+                            android:textColor="@color/textblack"
                             android:layout_gravity="center_horizontal"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"/>
@@ -120,7 +124,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Call Us"
-                            android:textColor="#000"
+                            android:fontFamily="@font/lato"
+                            android:textColor="@color/textblack"
                             android:layout_gravity="center_horizontal"
                             android:textSize="15dp"
                             android:textStyle="bold"
@@ -130,7 +135,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Mon to Fri"
-                            android:textColor="#000"
+                            android:fontFamily="@font/lato"
+                            android:textColor="@color/textblack"
                             android:layout_gravity="center_horizontal"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"/>
@@ -139,7 +145,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="8:00am to 5:00pm"
-                            android:textColor="#000"
+                            android:fontFamily="@font/lato"
+                            android:textColor="@color/textblack"
                             android:layout_gravity="center_horizontal"
                             android:textSize="15dp"
                             android:layout_marginTop="5dp"/>
@@ -174,7 +181,8 @@
                             android:layout_height="wrap_content"
                             android:text="Track Order"
                             android:layout_centerVertical="true"
-                            android:textColor="#000"
+                            android:fontFamily="@font/lato"
+                            android:textColor="@color/textblack"
                             android:textSize="20dp"
                             android:layout_alignParentLeft="true"
                             android:layout_marginLeft="10dp"/>
@@ -193,7 +201,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginTop="20dp"
                             android:layout_centerVertical="true"
-                            android:background="#FF5722"
+                            android:background="@color/colorAccent"
                             android:layout_toLeftOf="@+id/arrow4"/>
 
                     </RelativeLayout>
@@ -216,7 +224,8 @@
                             android:layout_height="wrap_content"
                             android:text="Return Order"
                             android:layout_centerVertical="true"
-                            android:textColor="#000"
+                            android:fontFamily="@font/lato"
+                            android:textColor="@color/textblack"
                             android:textSize="20dp"
                             android:layout_alignParentLeft="true"
                             android:layout_marginLeft="10dp"/>
@@ -235,7 +244,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginTop="20dp"
                             android:layout_centerVertical="true"
-                            android:background="#FF5722"
+                            android:background="@color/colorAccent"
                             android:layout_toLeftOf="@+id/arrow2"/>
 
                     </RelativeLayout>
@@ -257,7 +266,8 @@
                             android:layout_height="wrap_content"
                             android:text="New Model Request"
                             android:layout_centerVertical="true"
-                            android:textColor="#000"
+                            android:fontFamily="@font/lato"
+                            android:textColor="@color/textblack"
                             android:textSize="20dp"
                             android:layout_alignParentLeft="true"
                             android:layout_marginLeft="10dp"/>
@@ -276,7 +286,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginTop="20dp"
                             android:layout_centerVertical="true"
-                            android:background="#FF5722"
+                            android:background="@color/colorAccent"
                             android:layout_toLeftOf="@+id/arrow3"/>
 
                     </RelativeLayout>
@@ -298,7 +308,8 @@
                             android:layout_height="wrap_content"
                             android:text="Cancel Order"
                             android:layout_centerVertical="true"
-                            android:textColor="#000"
+                            android:fontFamily="@font/lato"
+                            android:textColor="@color/textblack"
                             android:textSize="20dp"
                             android:layout_alignParentLeft="true"
                             android:layout_marginLeft="10dp"/>
@@ -317,7 +328,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginTop="20dp"
                             android:layout_centerVertical="true"
-                            android:background="#FF5722"
+                            android:background="@color/colorAccent"
                             android:layout_toLeftOf="@+id/arrow1"/>
 
                     </RelativeLayout>
@@ -330,7 +341,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Company policies"
-                android:textColor="#000"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/textblack"
                 android:textSize="15dp"
                 android:layout_below="@+id/support_help_layout"
                 android:layout_centerHorizontal="true"
@@ -360,7 +372,8 @@
                             android:layout_height="wrap_content"
                             android:text="About Us"
                             android:layout_centerVertical="true"
-                            android:textColor="#000"
+                            android:fontFamily="@font/lato"
+                            android:textColor="@color/textblack"
                             android:textSize="20dp"
                             android:layout_alignParentLeft="true"
                             android:layout_marginLeft="10dp"/>
@@ -379,7 +392,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginTop="20dp"
                             android:layout_centerVertical="true"
-                            android:background="#FF5722"
+                            android:background="@color/colorAccent"
                             android:layout_toLeftOf="@+id/arrow9"/>
 
                     </RelativeLayout>
@@ -401,7 +414,8 @@
                             android:layout_height="wrap_content"
                             android:text="Terms &amp; Conditions"
                             android:layout_centerVertical="true"
-                            android:textColor="#000"
+                            android:fontFamily="@font/lato"
+                            android:textColor="@color/textblack"
                             android:textSize="20dp"
                             android:layout_alignParentLeft="true"
                             android:layout_marginLeft="10dp"/>
@@ -420,7 +434,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginTop="20dp"
                             android:layout_centerVertical="true"
-                            android:background="#FF5722"
+                            android:background="@color/colorAccent"
                             android:layout_toLeftOf="@+id/arrow8"/>
 
                     </RelativeLayout>
@@ -442,7 +456,8 @@
                             android:layout_height="wrap_content"
                             android:text="Privacy Policy"
                             android:layout_centerVertical="true"
-                            android:textColor="#000"
+                            android:fontFamily="@font/lato"
+                            android:textColor="@color/textblack"
                             android:textSize="20dp"
                             android:layout_alignParentLeft="true"
                             android:layout_marginLeft="10dp"/>
@@ -461,7 +476,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginTop="20dp"
                             android:layout_centerVertical="true"
-                            android:background="#FF5722"
+                            android:background="@color/colorAccent"
                             android:layout_toLeftOf="@+id/arrow7"/>
 
                     </RelativeLayout>
@@ -483,7 +498,8 @@
                             android:layout_height="wrap_content"
                             android:text="Return Policy"
                             android:layout_centerVertical="true"
-                            android:textColor="#000"
+                            android:fontFamily="@font/lato"
+                            android:textColor="@color/textblack"
                             android:textSize="20dp"
                             android:layout_alignParentLeft="true"
                             android:layout_marginLeft="10dp"/>
@@ -502,7 +518,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginTop="20dp"
                             android:layout_centerVertical="true"
-                            android:background="#FF5722"
+                            android:background="@color/colorAccent"
                             android:layout_toLeftOf="@+id/arrow6"/>
 
                     </RelativeLayout>

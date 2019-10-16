@@ -18,7 +18,9 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Email ID"/>
+            android:hint="Email ID"
+            android:textColor="@color/textblack"
+            android:fontFamily="@font/lato"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -41,7 +43,9 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="First Name"/>
+                android:hint="First Name"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/textblack"/>
 
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
@@ -55,7 +59,9 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Last Name"/>
+                android:hint="Last Name"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/textblack"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -74,10 +80,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+91"
-            android:textColor="#000"
             android:layout_centerVertical="true"
             android:textSize="17dp"
-            android:id="@+id/con_code_1"/>
+            android:id="@+id/con_code_1"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/textblack"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -91,7 +98,9 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Mobile Number"/>
+                android:hint="Mobile Number"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/textblack"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -109,7 +118,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+91"
-            android:textColor="#000"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/textblack"
             android:layout_centerVertical="true"
             android:textSize="17dp"
             android:id="@+id/con_code_2"/>
@@ -126,7 +136,9 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Mobile Number"/>
+                android:hint="Mobile Number"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/textblack"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -140,6 +152,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginTop="10dp"
         android:text="Next"
-        android:id="@+id/next_button"/>
+        android:id="@+id/next_button"
+        android:fontFamily="@font/lato" />
 
 </RelativeLayout>

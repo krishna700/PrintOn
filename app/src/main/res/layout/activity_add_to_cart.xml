@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddToCartActivity">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY"
+        android:id="@+id/logo_add_to_cart"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/cart"
+        android:scaleType="fitXY"
+        android:padding="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Round Key Chain"
+        android:textAllCaps="true"
+        android:textColor="@color/textblack"
+        android:fontFamily="@font/lato"
+        android:layout_below="@+id/logo_add_to_cart"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:id="@+id/sub_cat_text"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/layout_background"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/sub_cat_text"
+        android:padding="5dp"
+        android:id="@+id/add_to_cart_select_image">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/round_kc"
+            android:id="@+id/sub_cat_image"
+            />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/add_circle"
+            android:layout_centerInParent="true"
+            android:id="@+id/add_image_button"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/add_to_cart_select_image"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/layout_background"
+        android:padding="3dp"
+        android:id="@+id/upload_photo_layout">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/upload_photo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Photo"
+            android:textSize="20dp"
+            android:fontFamily="@font/lato"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/upload_photo_layout"
+        android:id="@+id/submit_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/layout_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:layout_centerInParent="true"
+            android:textSize="17dp"
+            android:fontFamily="@font/lato"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/submit_button"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/layout_background"
+        android:padding="3dp"
+        android:id="@+id/add_to_cart_layout">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/cart"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to cart"
+            android:textSize="20dp"
+            android:fontFamily="@font/lato"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/add_to_cart_shift_cat_recycler"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"/>
+
+
+
+</RelativeLayout>

@@ -2,7 +2,15 @@ package com.printon.user.Util;
 
 public class Singleton {
 
-    String category;
+    String category,sub_category;
+
+    public String getSub_category() {
+        return sub_category;
+    }
+
+    public void setSub_category(String sub_category) {
+        this.sub_category = sub_category;
+    }
 
     public String getCategory() {
         return category;

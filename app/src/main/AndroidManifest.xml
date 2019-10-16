@@ -10,8 +10,11 @@
         android:roundIcon="@mipmap/launch"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.SubCategoriesActivity"></activity>
-        <activity android:name=".Activities.AddDetailsActivity"></activity>
+        <activity android:name=".Activities.PillowSubCategoriesActivity"></activity>
+        <activity android:name=".Activities.AddToCartActivity" />
+        <activity android:name=".Activities.KeyChainSubCategoriesActivity" />
+        <activity android:name=".Activities.MugsSubCategoriesActivity" />
+        <activity android:name=".Activities.AddDetailsActivity" />
         <activity android:name=".Activities.MainActivity" />
         <activity
             android:name=".Activities.LoginActivity"

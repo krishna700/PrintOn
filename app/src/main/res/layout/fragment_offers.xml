@@ -18,7 +18,8 @@
             android:text="Offers / deals"
             android:textSize="20dp"
             android:layout_gravity="center"
-            android:textColor="#FF5722"/>
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/lato"/>
 
     </androidx.cardview.widget.CardView>
 

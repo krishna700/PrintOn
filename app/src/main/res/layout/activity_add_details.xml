@@ -26,16 +26,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_alignParentBottom="true"
-                android:background="#FF5722"
+                android:background="#FF6E40"
                 android:id="@+id/personal_tab_view"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Personal"
-                android:textColor="#FF5722"
+                android:textColor="#FF6E40"
                 android:layout_centerInParent="true"
-                android:id="@+id/personal_tab_text"/>
+                android:id="@+id/personal_tab_text"
+                android:fontFamily="@font/lato"/>
 
         </RelativeLayout>
 
@@ -50,16 +51,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_alignParentBottom="true"
-                android:background="#525151"
+                android:background="@color/textblack"
                 android:id="@+id/address_tab_view"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Address"
-                android:textColor="#525151"
+                android:textColor="@color/textblack"
                 android:layout_centerInParent="true"
-                android:id="@+id/address_tab_text"/>
+                android:id="@+id/address_tab_text"
+                android:fontFamily="@font/lato"
+                />
 
         </RelativeLayout>
 
