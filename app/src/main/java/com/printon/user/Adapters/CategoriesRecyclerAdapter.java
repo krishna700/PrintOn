@@ -12,6 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.printon.user.Activities.GiftsSubCategoriesActivity;
 import com.printon.user.Activities.KeyChainSubCategoriesActivity;
 import com.printon.user.Activities.MugsSubCategoriesActivity;
 import com.printon.user.Activities.PillowSubCategoriesActivity;
@@ -97,6 +98,7 @@ public class CategoriesRecyclerAdapter extends RecyclerView.Adapter<CategoriesRe
 
 
                         case "Gifts":
+                            context.startActivity(new Intent(context, GiftsSubCategoriesActivity.class));
                             Toast.makeText(context, "7", Toast.LENGTH_SHORT).show();
                             break;
 

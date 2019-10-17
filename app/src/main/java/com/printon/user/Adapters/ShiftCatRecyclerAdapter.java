@@ -12,6 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.printon.user.Activities.GiftsSubCategoriesActivity;
 import com.printon.user.Activities.KeyChainSubCategoriesActivity;
 import com.printon.user.Activities.MugsSubCategoriesActivity;
 import com.printon.user.Activities.PillowSubCategoriesActivity;
@@ -100,6 +101,10 @@ public class ShiftCatRecyclerAdapter extends RecyclerView.Adapter<ShiftCatRecycl
 
 
                         case "Gifts":
+                            App.getSingleton().setCategory(shift_cat.get(getAdapterPosition()).getCat());
+                            Intent intent7= new Intent(context, GiftsSubCategoriesActivity.class);
+                            intent7.setFlags(intent7.FLAG_ACTIVITY_NEW_TASK);
+                            context.startActivity(intent7);
                             Toast.makeText(context, "7", Toast.LENGTH_SHORT).show();
                             break;
 
