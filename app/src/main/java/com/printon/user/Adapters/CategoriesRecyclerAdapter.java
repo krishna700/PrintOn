@@ -15,7 +15,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.printon.user.Activities.GiftsSubCategoriesActivity;
 import com.printon.user.Activities.KeyChainSubCategoriesActivity;
 import com.printon.user.Activities.MugsSubCategoriesActivity;
+import com.printon.user.Activities.PhotosSubcategoriesActivity;
 import com.printon.user.Activities.PillowSubCategoriesActivity;
+import com.printon.user.Activities.TshirtsSubcategoriesActivity;
 import com.printon.user.Models.CategoriesRecyclerModel;
 import com.printon.user.R;
 import com.printon.user.Util.App;
@@ -70,6 +72,7 @@ public class CategoriesRecyclerAdapter extends RecyclerView.Adapter<CategoriesRe
                     switch (categories.get(getAdapterPosition()).getCat_name()){
 
                         case "Photos":
+                            context.startActivity(new Intent(context, PhotosSubcategoriesActivity.class));
                             Toast.makeText(context, "1", Toast.LENGTH_SHORT).show();
                             break;
 
@@ -84,6 +87,7 @@ public class CategoriesRecyclerAdapter extends RecyclerView.Adapter<CategoriesRe
                             break;
 
                         case "T-shirts":
+                            context.startActivity(new Intent(context, TshirtsSubcategoriesActivity.class));
                             Toast.makeText(context, "4", Toast.LENGTH_SHORT).show();
                             break;
 

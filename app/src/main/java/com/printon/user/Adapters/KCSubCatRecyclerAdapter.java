@@ -60,7 +60,13 @@ public class KCSubCatRecyclerAdapter extends RecyclerView.Adapter<KCSubCatRecycl
             kc_sub_cat_recycler_image.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    sub_catergory=sub_cat.get(getAdapterPosition()).getSub_cat_name()+" Key Chain";
+                    if (App.getSingleton().getCategory().equals("Key Chains")){
+                        sub_catergory=sub_cat.get(getAdapterPosition()).getSub_cat_name()+" Key Chain";
+                    }else
+                        if (App.getSingleton().getCategory().equals("T-shirts")){
+                            sub_catergory=sub_cat.get(getAdapterPosition()).getSub_cat_name();
+                        }
+
                     Toast.makeText(context, sub_catergory, Toast.LENGTH_SHORT).show();
                     App.getSingleton().setSub_category(sub_catergory);
                     context.startActivity(new Intent(context,AddToCartActivity.class));

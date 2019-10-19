@@ -10,7 +10,9 @@
         android:roundIcon="@mipmap/launch"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.GiftsSubCategoriesActivity"></activity>
+        <activity android:name=".Activities.PhotosSubcategoriesActivity"></activity>
+        <activity android:name=".Activities.TshirtsSubcategoriesActivity" />
+        <activity android:name=".Activities.GiftsSubCategoriesActivity" />
         <activity android:name=".Activities.PillowSubCategoriesActivity" />
         <activity android:name=".Activities.AddToCartActivity" />
         <activity android:name=".Activities.KeyChainSubCategoriesActivity" />

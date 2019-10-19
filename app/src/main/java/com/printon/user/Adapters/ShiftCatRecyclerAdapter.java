@@ -16,6 +16,7 @@ import com.printon.user.Activities.GiftsSubCategoriesActivity;
 import com.printon.user.Activities.KeyChainSubCategoriesActivity;
 import com.printon.user.Activities.MugsSubCategoriesActivity;
 import com.printon.user.Activities.PillowSubCategoriesActivity;
+import com.printon.user.Activities.TshirtsSubcategoriesActivity;
 import com.printon.user.Models.ShiftCatmodel;
 import com.printon.user.R;
 import com.printon.user.Util.App;
@@ -84,6 +85,10 @@ public class ShiftCatRecyclerAdapter extends RecyclerView.Adapter<ShiftCatRecycl
                             break;
 
                         case "T-shirts":
+                            App.getSingleton().setCategory(shift_cat.get(getAdapterPosition()).getCat());
+                            Intent intent4= new Intent(context, TshirtsSubcategoriesActivity.class);
+                            intent4.setFlags(intent4.FLAG_ACTIVITY_NEW_TASK);
+                            context.startActivity(intent4);
                             Toast.makeText(context, "4", Toast.LENGTH_SHORT).show();
                             break;
 

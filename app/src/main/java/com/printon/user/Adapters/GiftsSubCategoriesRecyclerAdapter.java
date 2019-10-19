@@ -62,10 +62,9 @@ public class GiftsSubCategoriesRecyclerAdapter extends RecyclerView.Adapter<Gift
                 @Override
                 public void onClick(View v) {
                     App.getSingleton().setSub_category(sub_cat.get(getAdapterPosition()).getSub_cat_name());
-                    Toast.makeText(context, "Coming Soon", Toast.LENGTH_SHORT).show();
-//                    Intent intent = new Intent(context, AddToCartActivity.class);
-//                    intent.setFlags(intent.FLAG_ACTIVITY_NEW_TASK);
-//                    context.startActivity(intent);
+                    Intent intent = new Intent(context, AddToCartActivity.class);
+                    intent.setFlags(intent.FLAG_ACTIVITY_NEW_TASK);
+                    context.startActivity(intent);
                 }
             });
 
