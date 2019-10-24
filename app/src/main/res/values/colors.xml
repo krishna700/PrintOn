@@ -6,4 +6,8 @@
     <color name="white">#ffffff</color>
     <color name="textblack">#4e4e50</color>
     <color name="colorBackground">#DFD7D5</color>
+
+    <color name="black">#030303</color>
+    <color name="green">#00C853</color>
+    <color name="greenDark">#378506</color>
 </resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include
+        android:id="@+id/a"
+        android:layout_width="fill_parent"
+        android:layout_height="500dp"
+        layout="@layout/cart_recycler_item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/proceed"
+        android:background="@color/green"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+    <TextView
+        android:text="Proceed to payment"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

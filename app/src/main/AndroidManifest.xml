@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.printon.user">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:name=".Util.App"
         android:allowBackup="true"
@@ -31,6 +32,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activities.CartActivity"/>
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_vg97r2Ee9uVHyp"
+            />
+        <activity android:name=".Activities.PaymentActivity"/>
     </application>
 
 </manifest>

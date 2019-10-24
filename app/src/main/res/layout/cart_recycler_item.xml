@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/mugs"
+        android:id="@+id/cart_item_image"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Print White Mug with fine"
+        android:layout_toRightOf="@+id/cart_item_image"
+        android:layout_marginTop="22dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:id="@+id/line_one"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ceramic Build Quality"
+        android:layout_toRightOf="@+id/cart_item_image"
+        android:textColor="@color/colorAccent"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:id="@+id/line_two"
+        android:layout_below="@+id/line_one"
+        android:layout_marginLeft="5dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="399/-"
+        android:layout_toRightOf="@+id/cart_item_image"
+        android:textColor="@color/textblack"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:id="@+id/line_three"
+        android:layout_below="@+id/line_two"
+        android:layout_marginLeft="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="in stock"
+        android:layout_toRightOf="@+id/line_three"
+        android:textColor="#4CAF50"
+        android:textSize="12dp"
+        android:layout_marginTop="4dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:id="@+id/line_three_two"
+        android:layout_below="@+id/line_two"
+        android:layout_marginLeft="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/layout_background_light"
+        android:id="@+id/minus"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/cart_item_image"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="-"
+            android:gravity="center"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="1"
+            android:gravity="center"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="+"
+            android:gravity="center"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/colorAccent"/>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY"
+        android:id="@+id/logo_user"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/photo_circle"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/logo_user"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amanda Cyrus"
+        android:layout_below="@+id/logo_user"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/textblack"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:textSize="22dp"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/name_user"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="amandacyrus@gmail.com"
+        android:layout_below="@+id/name_user"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/textblack"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:textSize="10dp"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/mail_user"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+91 9999988888"
+        android:layout_below="@+id/mail_user"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textblack"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:textSize="10dp"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/number_user"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Orders"
+        android:layout_below="@+id/number_user"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/textblack"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:textSize="15dp"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/orders_user"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click here to view all my Orders"
+        android:layout_below="@+id/orders_user"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/textblack"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:textSize="10dp"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/order_hint"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Addresses"
+        android:layout_below="@+id/order_hint"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/textblack"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:textSize="15dp"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/address_user"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="67 A Model Town, Jalandhar - 144411"
+        android:layout_below="@+id/address_user"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/textblack"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:textSize="10dp"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/address_hint"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/textblack"
+        android:layout_below="@id/address_hint"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="26dp"
+        android:id="@+id/view1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Settings"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/textblack"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:textSize="15dp"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/settings_user"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/textblack"
+        android:layout_below="@id/settings_user"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="26dp"
+        android:id="@+id/view2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification Preference"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/textblack"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:textSize="15dp"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/notification_user"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/textblack"
+        android:layout_below="@id/notification_user"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="26dp"
+        android:id="@+id/view3"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout of this app"
+        android:layout_below="@+id/view3"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/textblack"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:textSize="15dp"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/logout_user"/>
+
+
+
+
+
+</RelativeLayout>

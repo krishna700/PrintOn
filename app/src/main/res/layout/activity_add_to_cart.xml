@@ -15,15 +15,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginLeft="10dp"/>
 
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/cart"
-        android:scaleType="fitXY"
-        android:padding="12dp"
-        android:layout_marginTop="5dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="10dp"/>
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -261,8 +253,7 @@
         android:layout_height="match_parent"
         android:layout_below="@id/layout_tshirt2"
         android:orientation="vertical"
-        android:id="@+id/upload_layout"
-        android:layout_above="@+id/add_to_cart_shift_cat_recycler">
+        android:id="@+id/upload_layout">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -292,67 +283,24 @@
 
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="130dp"
-            android:layout_height="50dp"
-            android:id="@+id/submit_button"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/layout_background">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="submit"
-                android:layout_centerInParent="true"
-                android:textSize="17dp"
-                android:fontFamily="@font/lato"
-                android:textAllCaps="true"
-                android:textColor="@color/colorAccent"
-                android:textStyle="bold"/>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/layout_background"
-            android:padding="3dp"
-            android:id="@+id/add_to_cart_layout">
 
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_margin="5dp"
-                android:src="@drawable/cart"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Add to cart"
-                android:textSize="20dp"
-                android:fontFamily="@font/lato"
-                android:layout_centerInParent="true"
-                android:textStyle="bold"/>
-
-        </RelativeLayout>
 
     </LinearLayout>
 
 
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
+
+    <github.ishaan.buttonprogressbar.ButtonProgressBar
+        android:id="@+id/add_to_cart"
+        app:text="Add to cart"
+        app:progColor="@color/colorPrimary"
+        app:bgColor="@color/colorPrimaryDark"
         android:layout_alignParentBottom="true"
-        android:id="@+id/add_to_cart_shift_cat_recycler"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"/>
+        app:textColor="@color/black"
 
-
-
+        app:type="indeterminate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
 </RelativeLayout>
