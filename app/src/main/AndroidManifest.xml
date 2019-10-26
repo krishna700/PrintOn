@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.printon.user">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:name=".Util.App"
         android:allowBackup="true"
@@ -11,7 +10,9 @@
         android:roundIcon="@mipmap/launch"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.PhotosSubcategoriesActivity"></activity>
+        <activity android:name=".Activities.PastOrdersActivity"></activity>
+        <activity android:name=".Activities.CurrentOrdersActivity" />
+        <activity android:name=".Activities.PhotosSubcategoriesActivity" />
         <activity android:name=".Activities.TshirtsSubcategoriesActivity" />
         <activity android:name=".Activities.GiftsSubCategoriesActivity" />
         <activity android:name=".Activities.PillowSubCategoriesActivity" />
@@ -32,12 +33,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.CartActivity"/>
+        <activity android:name=".Activities.CartActivity" />
+        <activity android:name=".Activities.PaymentActivity" />
+
         <meta-data
             android:name="com.razorpay.ApiKey"
-            android:value="rzp_test_vg97r2Ee9uVHyp"
-            />
-        <activity android:name=".Activities.PaymentActivity"/>
+            android:value="rzp_test_vg97r2Ee9uVHyp" />
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

@@ -6,177 +6,159 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.UserFragment">
 
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY"
+        android:id="@+id/logo_user"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"/>
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#fff"
-        android:id="@+id/user_title_card"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Your Account"
-            android:textSize="20dp"
-            android:layout_gravity="center"
-            android:textColor="@color/colorAccent"
-            android:fontFamily="@font/lato"/>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="#fff"
-        android:layout_below="@+id/user_title_card"
-        android:id="@+id/your_addresses_card"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp">
+        android:src="@drawable/photo_circle"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="-25dp"
+        android:layout_below="@+id/logo_user"/>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/your_addresses_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:text="Your Addresses"
-                android:fontFamily="@font/lato"
-                android:textColor="@color/textblack"
-                android:textSize="17dp"
-                android:textStyle="bold"
-                />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amanda Cyrus"
+        android:layout_below="@+id/logo_user"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/textblack"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:textSize="22dp"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/name_user"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="View/Edit name, mobile"
-                android:fontFamily="@font/lato"
-                android:textColor="@color/textblack"
-                android:textSize="15dp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="10dp"
-                android:id="@+id/view_your_addresses_text1"
-                android:layout_below="@+id/your_addresses_text"
-                android:layout_marginTop="10dp"
-                />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="amandacyrus@gmail.com"
+        android:layout_below="@+id/name_user"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/textblack"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:textSize="10dp"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/mail_user"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="and address"
-                android:fontFamily="@font/lato"
-                android:textColor="@color/textblack"
-                android:textSize="15dp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="10dp"
-                android:id="@+id/view_your_addresses_text2"
-                android:layout_below="@+id/view_your_addresses_text1"
-                android:layout_marginTop="5dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+91 9999988888"
+        android:layout_below="@+id/mail_user"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textblack"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:textSize="10dp"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/number_user"/>
 
 
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/right_arrow_icon"
-                android:layout_centerVertical="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="10dp"
-                android:id="@+id/arrow11"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Addresses"
+        android:layout_below="@+id/number_user"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/textblack"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:textSize="15dp"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/address_user"/>
 
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="60dp"
-                android:layout_centerVertical="true"
-                android:background="@color/colorAccent"
-                android:layout_toLeftOf="@+id/arrow11"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="67 A Model Town, Jalandhar - 144411"
+        android:layout_below="@+id/address_user"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/textblack"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:textSize="10dp"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/address_hint"/>
 
-        </RelativeLayout>
 
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
+    <View
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="#fff"
-        android:layout_below="@+id/your_addresses_card"
-        android:id="@+id/your_orders_card"
+        android:layout_height="1dp"
+        android:background="@color/textblack"
+        android:layout_below="@id/address_hint"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp">
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="26dp"
+        android:id="@+id/view1"/>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Settings"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/textblack"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:textSize="15dp"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/settings_user"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/textblack"
+        android:layout_below="@id/settings_user"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="26dp"
+        android:id="@+id/view2"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Your Orders"
-                android:fontFamily="@font/lato"
-                android:textColor="@color/textblack"
-                android:textSize="17dp"
-                android:textStyle="bold"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:id="@+id/your_orders_text"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="View, track, cancel or"
-                android:fontFamily="@font/lato"
-                android:textColor="@color/textblack"
-                android:textSize="15dp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="10dp"
-                android:id="@+id/view_your_orders_text1"
-                android:layout_below="@+id/your_orders_text"
-                android:layout_marginTop="10dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="return order"
-                android:fontFamily="@font/lato"
-                android:textColor="@color/textblack"
-                android:textSize="15dp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="10dp"
-                android:id="@+id/view_your_orders_text2"
-                android:layout_below="@+id/view_your_orders_text1"
-                android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification Preference"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/textblack"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:textSize="15dp"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/notification_user"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/textblack"
+        android:layout_below="@id/notification_user"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="26dp"
+        android:id="@+id/view3"/>
 
 
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/right_arrow_icon"
-                android:layout_centerVertical="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="10dp"
-                android:id="@+id/arrow12"/>
-
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="60dp"
-                android:layout_centerVertical="true"
-                android:background="@color/colorAccent"
-                android:layout_toLeftOf="@+id/arrow12"/>
-
-        </RelativeLayout>
-
-    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout of this app"
+        android:layout_below="@+id/view3"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/textblack"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:textSize="15dp"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/logout_user"/>
 
 </RelativeLayout>

@@ -42,14 +42,7 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/ts_text"
         android:id="@+id/ts_sub_cat_recycler"
-        android:layout_above="@id/ts_shift_cat_recycler"/>
+        />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:layout_alignParentBottom="true"
-        android:id="@+id/ts_shift_cat_recycler"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"/>
 
 </RelativeLayout>

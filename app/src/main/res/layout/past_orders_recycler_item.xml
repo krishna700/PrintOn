@@ -11,13 +11,13 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
         android:src="@drawable/mugs"
-        android:id="@+id/cart_item_image"/>
+        android:id="@+id/past_orders_item_image"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Custom Print White Mug with fine"
-        android:layout_toRightOf="@+id/cart_item_image"
+        android:layout_toRightOf="@+id/past_orders_item_image"
         android:layout_marginTop="22dp"
         android:textColor="@color/colorAccent"
         android:textSize="17dp"
@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ceramic Build Quality"
-        android:layout_toRightOf="@+id/cart_item_image"
+        android:layout_toRightOf="@+id/past_orders_item_image"
         android:textColor="@color/colorAccent"
         android:textSize="17dp"
         android:textStyle="bold"
@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="399/-"
-        android:layout_toRightOf="@+id/cart_item_image"
+        android:layout_toRightOf="@+id/past_orders_item_image"
         android:textColor="@color/textblack"
         android:textSize="17dp"
         android:textStyle="bold"
@@ -67,56 +67,31 @@
         android:layout_marginLeft="10dp"/>
 
 
-    <LinearLayout
+
+    <RelativeLayout
         android:layout_width="100dp"
-        android:layout_height="27dp"
-        android:layout_marginLeft="10dp"
-        android:background="@drawable/layout_background_light"
-        android:id="@+id/minus"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/cart_item_image"
-        android:orientation="horizontal"
-        android:weightSum="3">
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/layout_background_light">
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="20dp"
-            android:layout_weight="1"
-            android:textSize="20dp"
-            android:text="-"
-            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/textblack"
             android:fontFamily="@font/lato"
-            android:textColor="@color/colorAccent"/>
+            android:text="Repeat Order"/>
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="20dp"
-            android:layout_weight="1"
-            android:textSize="20dp"
-            android:text="1"
-            android:gravity="center"
-            android:fontFamily="@font/lato"
-            android:textColor="@color/colorAccent"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="20dp"
-            android:layout_weight="1"
-            android:textSize="20dp"
-            android:text="+"
-            android:gravity="center"
-            android:fontFamily="@font/lato"
-            android:textColor="@color/colorAccent"/>
-
-
-    </LinearLayout>
+    </RelativeLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/textblack"
-        android:layout_below="@+id/minus"
-        android:layout_marginTop="8dp"/>
+        android:layout_alignParentBottom="true"/>
 
 
 

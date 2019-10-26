@@ -6,15 +6,95 @@
     android:orientation="vertical"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY"
+        android:id="@+id/logo_cart"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/cart"
+        android:scaleType="fitXY"
+        android:id="@+id/cart"
+        android:padding="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/logo_cart"
+        android:id="@+id/address_cart"
+        android:layout_marginTop="7dp"
+        android:background="@color/colorAccent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/white"
+            android:text="Deliver to Ambala - Jalandhar 144411"
+            android:layout_centerVertical="true"
+            android:textSize="17dp"
+            android:layout_marginLeft="5dp"/>
+
+    </RelativeLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/address_cart"
+        android:layout_marginTop="7dp">
     <include
         android:id="@+id/a"
         android:layout_width="fill_parent"
-        android:layout_height="500dp"
+        android:layout_height="300dp"
         layout="@layout/cart_recycler_item" />
     </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@id/proceed"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/textblack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/textblack"
+            android:text="Total Price : "
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/textblack"
+            android:text="Rs. 399.00"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
 
     <LinearLayout
         android:layout_alignParentBottom="true"
@@ -32,6 +112,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
     </LinearLayout>
+
+
 
 
 </RelativeLayout>
