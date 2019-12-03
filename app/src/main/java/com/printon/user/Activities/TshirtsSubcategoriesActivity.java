@@ -2,16 +2,12 @@ package com.printon.user.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 
 import com.printon.user.Adapters.KCSubCatRecyclerAdapter;
-import com.printon.user.Adapters.ShiftCatRecyclerAdapter;
 import com.printon.user.Models.ShiftCatmodel;
 import com.printon.user.Models.SubCategoriesModel;
 import com.printon.user.R;

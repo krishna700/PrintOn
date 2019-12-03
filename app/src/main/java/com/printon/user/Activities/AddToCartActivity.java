@@ -1,8 +1,6 @@
 package com.printon.user.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,13 +11,8 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.printon.user.Adapters.ShiftCatRecyclerAdapter;
-import com.printon.user.Models.ShiftCatmodel;
 import com.printon.user.R;
 import com.printon.user.Util.App;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
