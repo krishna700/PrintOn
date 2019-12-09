@@ -10,20 +10,22 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.printon.user.R;
-import com.razorpay.Checkout;
-import com.razorpay.PaymentResultListener;
 
-import org.json.JSONObject;
+import com.shreyaspatil.EasyUpiPayment.EasyUpiPayment;
+import com.shreyaspatil.EasyUpiPayment.listener.PaymentStatusListener;
+import com.shreyaspatil.EasyUpiPayment.model.TransactionDetails;
 
-import java.nio.BufferUnderflowException;
+
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class CartActivity extends AppCompatActivity implements PaymentResultListener {
+public class CartActivity extends AppCompatActivity implements PaymentStatusListener {
 
     @BindView(R.id.proceed)
     LinearLayout linearLayout;
+
+     EasyUpiPayment easyUpiPayment;
 
   @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -34,57 +36,58 @@ public class CartActivity extends AppCompatActivity implements PaymentResultList
       (CartActivity.this).getSupportActionBar().hide();
       ButterKnife.bind(this);
 
-      Checkout.preload(getApplicationContext());
+      easyUpiPayment= new EasyUpiPayment.Builder()
+              .with(this)
+              .setPayeeVpa("9851700100@paytm")
+              .setPayeeName("PrintOn")
+              .setTransactionId("7274423")
+              .setTransactionRefId("34232423")
+              .setDescription("Food")
+              .setAmount("1.01")
+              .build();
       linearLayout.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v) {
-              startPayment();
+              easyUpiPayment.startPayment();
           }
       });
+      easyUpiPayment.setPaymentStatusListener(this);
 
   }
 
-    public void startPayment() {
 
-        Checkout checkout = new Checkout();
-        checkout.setImage(R.drawable.logo);
-        final Activity activity = this;
-
-
-        try {
-            JSONObject options = new JSONObject();
-
-
-            options.put("name", "PrintOn");
-            options.put("description", "Order No. #123456");
-            options.put("order_id", "order_9A33XWu170gUtm");
-            options.put("currency", "INR");
-            options.put("amount", "500");
-
-            JSONObject preFill = new JSONObject();
-            preFill.put("email", "test@solcode.in");
-            preFill.put("contact", "9851700100");
-
-            options.put("prefill", preFill);
-
-            checkout.open(activity, options);
-        } catch(Exception e) {
-            Log.e("ds", "Error in starting Razorpay Checkout", e);
-        }
-    }
     @Override
-    public void onPaymentSuccess(String razorpayPaymentID) {
-        /**
-         * Add your logic here for a successful payment response
-         */
-        Toast.makeText(this,"Payment success",Toast.LENGTH_LONG).show();
+    public void onTransactionCompleted(TransactionDetails transactionDetails) {
+        // Transaction Completed
+        Log.d("TransactionDetails", transactionDetails.toString());
+
     }
 
     @Override
-    public void onPaymentError(int code, String response) {
-        /**
-         * Add your logic here for a failed payment response
-         */
+    public void onTransactionSuccess() {
+        // Payment Success
+        Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show();
+
     }
 
+    @Override
+    public void onTransactionSubmitted() {
+        // Payment Pending
+        Toast.makeText(this, "Pending | Submitted", Toast.LENGTH_SHORT).show();
+
+    }
+
+    @Override
+    public void onTransactionFailed() {
+        // Payment Failed
+        Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show();
+
+    }
+
+    @Override
+    public void onTransactionCancelled() {
+        // Payment Cancelled by User
+        Toast.makeText(this, "Cancelled", Toast.LENGTH_SHORT).show();
+
+    }
 }

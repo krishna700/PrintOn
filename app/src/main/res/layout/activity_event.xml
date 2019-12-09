@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="30dp"
+    android:id="@+id/card"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="350dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Event Type"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/type"
+            android:textSize="15sp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Name"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/name"
+            android:textSize="15sp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            />
+
+
+
+        <EditText
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="300dp"
+            android:hint="Phone"
+            android:id="@+id/phone"
+            android:maxLength="10"
+            android:inputType="phone"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+
+        <EditText
+            android:layout_width="300dp"
+            android:hint="Street Address"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/street"
+            android:layout_height="wrap_content"/>
+
+
+
+        <EditText
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="House No"
+            android:layout_width="300dp"
+            android:id="@+id/house"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="LandMark"
+            android:id="@+id/landmark"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/request"
+            android:text="Request Call"/>
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

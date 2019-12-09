@@ -12,6 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.printon.user.Activities.Event;
 import com.printon.user.Activities.GiftsSubCategoriesActivity;
 import com.printon.user.Activities.KeyChainSubCategoriesActivity;
 import com.printon.user.Activities.MugsSubCategoriesActivity;
@@ -73,31 +74,32 @@ public class CategoriesRecyclerAdapter extends RecyclerView.Adapter<CategoriesRe
 
                         case "Photos":
                             context.startActivity(new Intent(context, PhotosSubcategoriesActivity.class));
-                            Toast.makeText(context, "1", Toast.LENGTH_SHORT).show();
+                           // Toast.makeText(context, "1", Toast.LENGTH_SHORT).show();
                             break;
 
                         case "Mugs":
                             context.startActivity(new Intent(context, MugsSubCategoriesActivity.class));
-                            Toast.makeText(context, "2", Toast.LENGTH_SHORT).show();
+                           // Toast.makeText(context, "2", Toast.LENGTH_SHORT).show();
                             break;
 
                         case "Key Chains":
                             context.startActivity(new Intent(context, KeyChainSubCategoriesActivity.class));
-                            Toast.makeText(context, "3", Toast.LENGTH_SHORT).show();
+                           // Toast.makeText(context, "3", Toast.LENGTH_SHORT).show();
                             break;
 
                         case "T-shirts":
                             context.startActivity(new Intent(context, TshirtsSubcategoriesActivity.class));
-                            Toast.makeText(context, "4", Toast.LENGTH_SHORT).show();
+                           // Toast.makeText(context, "4", Toast.LENGTH_SHORT).show();
                             break;
 
                         case "Cushions":
                             context.startActivity(new Intent(context, PillowSubCategoriesActivity.class));
-                            Toast.makeText(context, "5", Toast.LENGTH_SHORT).show();
+                            //Toast.makeText(context, "5", Toast.LENGTH_SHORT).show();
                             break;
 
                         case "Events":
-                            Toast.makeText(context, "6", Toast.LENGTH_SHORT).show();
+                            context.startActivity(new Intent(context, Event.class));
+                            //Toast.makeText(context, "6", Toast.LENGTH_SHORT).show();
                             break;
 
 
